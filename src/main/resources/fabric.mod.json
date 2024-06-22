@@ -1,16 +1,16 @@
 {
   "schemaVersion": 1,
-  "id": "pressalttomeow",
+  "id": "pressalttobark",
   "version": "${version}",
 
-  "name": "Press Alt To Meow",
-  "description": "Press Alt To Meow!",
+  "name": "Press Alt To Bark",
+  "description": "Press Alt To Bark!",
   "authors": [
-    "mari_023"
+    "mari_023, forked by jabthetab"
   ],
   "contact": {
     "homepage": "https://modrinth.com/mod/pressalttomeow",
-    "sources": "https://github.com/Mari023/pressalttomeow"
+    "sources": "https://github.com/Mari023/pressalttomeow, https://github.com/jabthetab/pressalttobark"
   },
 
   "license": "CC0-1.0",
