@@ -39,7 +39,7 @@ public class PressAltToMeow implements ModInitializer {
     }
 
     public static SoundEvent defaultSounds() {
-        return selectSound(SoundEvents.CAT_AMBIENT, SoundEvents.CAT_STRAY_AMBIENT, SoundEvents.CAT_PURREOW, SoundEvents.OCELOT_AMBIENT);
+        return selectSound(SoundEvents.WOLF_AMBIENT);
     }
 
     public static SoundEvent selectSound(SoundEvent... soundEvent) {
