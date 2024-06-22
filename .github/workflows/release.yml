@@ -31,28 +31,28 @@ jobs:
           name: fabric
           retention-days: 2
 
-  publish_fabric:
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
-      - uses: actions/download-artifact@v4
-        with:
-          name: fabric
-          path: download
+#  publish_fabric:
+#    runs-on: ubuntu-latest
+#    needs: build
+#    steps:
+#      - uses: actions/download-artifact@v4
+#        with:
+#          name: fabric
+#          path: download
+#
+#      - uses: Kir-Antipov/mc-publish@995edadc13559a8b28d0b7e6571229f067ec7659
+#        with:
+#          modrinth-id: EjH4M3L1
+#          modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
 
-      - uses: Kir-Antipov/mc-publish@995edadc13559a8b28d0b7e6571229f067ec7659
-        with:
-          modrinth-id: EjH4M3L1
-          modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
-
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          loaders: |
-            fabric
-          game-versions: |
-            1.20.6
-          modrinth-dependencies: |
-            fabric-api | depends
-          java: 21
-          version: ${{ github.event.release.tag_name }}-fabric
-          name: ${{ github.event.release.tag_name }}-fabric
-          files: download/!(*-@(dev|dev-shadow)).jar
+#          github-token: ${{ secrets.GITHUB_TOKEN }}
+#          loaders: |
+#            fabric
+#          game-versions: |
+#            1.20.6
+#          modrinth-dependencies: |
+#            fabric-api | depends
+#          java: 21
+#          version: ${{ github.event.release.tag_name }}-fabric
+#          name: ${{ github.event.release.tag_name }}-fabric
+#          files: download/!(*-@(dev|dev-shadow)).jar
